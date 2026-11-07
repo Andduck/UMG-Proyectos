@@ -1,468 +1,546 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UMG Business Lab | Planes de Negocio</title>
-  <meta name="description" content="Proyecto universitario - 4 planes de negocio - Universidad Mariano Gálvez de Guatemala" />
 
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
-  <!-- AOS - Animate On Scroll -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <!-- Estilos propios -->
-  <link rel="stylesheet" href="css/style.css" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UMG Business Lab | Planes de Negocio</title>
+    <meta name="description" content="Proyecto universitario - 4 planes de negocio - Universidad Mariano Gálvez de Guatemala" />
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- AOS - Animate On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
 
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
-        <span class="logo-mark">UMG</span>
-        <span class="brand-text">Business Lab by AT</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#inicio">
+                <span class="logo-mark">UMG</span>
+                <span class="brand-text">Business Lab UMG 2026</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <i class="bi bi-list"></i>
       </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto gap-lg-2">
-          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#marca">Marca</a></li>
-          <li class="nav-item"><a class="nav-link" href="#planes">Planes</a></li>
-          <li class="nav-item"><a class="nav-link" href="#video">Video</a></li>
-          <li class="nav-item"><a class="nav-link" href="#galeria">Publicidad</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- ===== HERO ===== -->
-  <section id="inicio" class="hero-section">
-    <div class="hero-bg-shapes">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-2"></div>
-      <div class="shape shape-3"></div>
-    </div>
-    <div class="container position-relative">
-      <div class="row align-items-center min-vh-100">
-        <div class="col-lg-7" data-aos="fade-right">
-          <span class="badge-umg mb-3 d-inline-block">Universidad Mariano Gálvez de Guatemala</span>
-          <h1 class="hero-title">
-            Cuatro ideas.<br />
-            <span class="gradient-text">Un futuro empresarial.</span>
-          </h1>
-          <p class="hero-subtitle">
-            Explora los 4 planes de negocio desarrollados por estudiantes de la UMG.
-            Innovación, estrategia y visión convertidas en proyectos reales.
-          </p>
-          <div class="d-flex flex-wrap gap-3 mt-4">
-            <a href="#planes" class="btn btn-primary-umg">
-              <i class="bi bi-grid-3x3-gap-fill me-2"></i>Ver Planes
-            </a>
-            <a href="#video" class="btn btn-outline-umg">
-              <i class="bi bi-play-circle me-2"></i>Ver Video
-            </a>
-          </div>
-          <div class="hero-stats mt-5 d-flex gap-4 flex-wrap">
-            <div><h3>04</h3><p>Planes de Negocio</p></div>
-            <div><h3>100%</h3><p>Innovación UMG</p></div>
-            <div><h3>2025</h3><p>Generación</p></div>
-          </div>
-        </div>
-        <div class="col-lg-5 text-center" data-aos="fade-left">
-          <div class="hero-illustration">
-            <div class="floating-card card-a"><i class="bi bi-graph-up-arrow"></i><span>Crecimiento</span></div>
-            <div class="floating-card card-b"><i class="bi bi-lightbulb"></i><span>Ideas</span></div>
-            <div class="floating-card card-c"><i class="bi bi-rocket-takeoff"></i><span>Innovación</span></div>
-            <div class="hero-circle">
-              <i class="bi bi-briefcase-fill"></i>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto gap-lg-2">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#marca">Marca</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#planes">Planes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#video">Video</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Publicidad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <div class="scroll-indicator">
-      <span>Scroll</span>
-      <i class="bi bi-chevron-down"></i>
-    </div>
-  </section>
+    </nav>
 
-  <!-- ===== BANNER PUBLICITARIO ===== -->
-<section class="promo-banner" data-aos="fade-up">
-  <div class="container">
-    <div class="promo-banner-inner">
-      <div class="promo-banner-content">
-        <span class="promo-tag"><i class="bi bi-stars me-2"></i>Publicidad</span>
-        <h3>Conoce los 4 planes de negocio de UMG Business Lab</h3>
-        <p>Innovación guatemalteca con visión empresarial · Generación 2025</p>
-      </div>
-      <a href="#planes" class="promo-banner-cta">
+    <!-- ===== HERO ===== -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container position-relative">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-7" data-aos="fade-right">
+                    <span class="badge-umg mb-3 d-inline-block">Universidad Mariano Gálvez de Guatemala</span>
+                    <h1 class="hero-title">
+                        Cuatro ideas.<br />
+                        <span class="gradient-text">Un futuro empresarial.</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Explora los 4 planes de negocio desarrollados por estudiantes de la UMG. Innovación, estrategia y visión convertidas en proyectos reales.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 mt-4">
+                        <a href="#planes" class="btn btn-primary-umg">
+                            <i class="bi bi-grid-3x3-gap-fill me-2"></i>Ver Planes
+                        </a>
+                        <a href="#video" class="btn btn-outline-umg">
+                            <i class="bi bi-play-circle me-2"></i>Ver Video
+                        </a>
+                    </div>
+                    <div class="hero-stats mt-5 d-flex gap-4 flex-wrap">
+                        <div>
+                            <h3>04</h3>
+                            <p>Planes de Negocio</p>
+                        </div>
+                        <div>
+                            <h3>100%</h3>
+                            <p>Innovación UMG</p>
+                        </div>
+                        <div>
+                            <h3>2025</h3>
+                            <p>Generación</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center" data-aos="fade-left">
+                    <div class="hero-illustration">
+                        <div class="floating-card card-a"><i class="bi bi-graph-up-arrow"></i><span>Crecimiento</span></div>
+                        <div class="floating-card card-b"><i class="bi bi-lightbulb"></i><span>Ideas</span></div>
+                        <div class="floating-card card-c"><i class="bi bi-rocket-takeoff"></i><span>Innovación</span></div>
+                        <div class="hero-circle">
+                            <i class="bi bi-briefcase-fill"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <i class="bi bi-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- ===== BANNER PUBLICITARIO ===== -->
+    <section class="promo-banner" data-aos="fade-up">
+        <div class="container">
+            <div class="promo-banner-inner">
+                <div class="promo-banner-content">
+                    <span class="promo-tag"><i class="bi bi-stars me-2"></i>Publicidad</span>
+                    <h3>Conoce los 4 planes de negocio de UMG Business Lab</h3>
+                    <p>Innovación guatemalteca con visión empresarial · Generación 2025</p>
+                </div>
+                <a href="#planes" class="promo-banner-cta">
         Explorar planes <i class="bi bi-arrow-right ms-2"></i>
       </a>
-    </div>
-  </div>
-</section>
+            </div>
+        </div>
+    </section>
 
-<!-- ===== MARCA ===== -->
-<section id="marca" class="section-padding marca-section">
-  <div class="container">
-    <div class="text-center mb-5" data-aos="fade-up">
-      <span class="section-tag">Nuestra Marca</span>
-      <h2 class="section-title">UMG Business Lab</h2>
-      <p class="section-subtitle">
-        Selecciona un proyecto para conocer su identidad, propuesta de valor, visión y misión.
-      </p>
-    </div>
+    <!-- ===== MARCA ===== -->
+    <section id="marca" class="section-padding marca-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="section-tag">Nuestra Marca</span>
+                <h2 class="section-title">UMG Business Lab</h2>
+                <p class="section-subtitle">
+                    Selecciona un proyecto para conocer su identidad, propuesta de valor, visión y misión.
+                </p>
+            </div>
 
-    <!-- ============ SELECTOR DE PROYECTO ============ -->
-    <div class="proyecto-selector mb-5" data-aos="fade-up">
-      <button class="proyecto-btn active" data-proyecto="cafe">
+            <!-- ============ SELECTOR DE PROYECTO ============ -->
+            <div class="proyecto-selector mb-5" data-aos="fade-up">
+                <button class="proyecto-btn active" data-proyecto="cafe">
         <span class="proyecto-num">01</span>
         <div class="proyecto-btn-info">
           <strong>MODA KREL´S</strong>
           <small>Moda · Estilo</small>
         </div>
       </button>
-      <button class="proyecto-btn" data-proyecto="tech">
+                <button class="proyecto-btn" data-proyecto="tech">
         <span class="proyecto-num">02</span>
         <div class="proyecto-btn-info">
           <strong>D´Lirios</strong>
           <small>Fit · Comida</small>
         </div>
       </button>
-      <button class="proyecto-btn" data-proyecto="eco">
+                <button class="proyecto-btn" data-proyecto="eco">
         <span class="proyecto-num">03</span>
         <div class="proyecto-btn-info">
           <strong>GRAFILAB</strong>
           <small>Moda · Estilo</small>
         </div>
       </button>
-      <button class="proyecto-btn" data-proyecto="salud">
+                <button class="proyecto-btn" data-proyecto="salud">
         <span class="proyecto-num">04</span>
         <div class="proyecto-btn-info">
           <strong>Guate Recicla</strong>
           <small>Reciclaje · Bienestar</small>
         </div>
       </button>
-    </div>
+            </div>
 
-    <!-- ============ CONTENIDO DINÁMICO ============ -->
-    <div class="marca-contenido" id="marcaContenido">
+            <!-- ============ CONTENIDO DINÁMICO ============ -->
+            <div class="marca-contenido" id="marcaContenido">
 
-      <!-- 1. LOGOTIPO -->
-      <div class="row g-4 mb-4">
-        <div class="col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="0">
-          <div class="marca-card h-100">
-            <div class="logo-container" id="marcaLogo">
-  <img src="" alt="Logotipo" id="marcaLogoImg" class="marca-logo-img" />
-  <div class="logo-fallback" id="marcaLogoFallback">
-    <i class="bi bi-hexagon-fill"></i>
-    <span>LOGO</span>
-  </div>
-</div>
-            <h4 class="mt-4" id="marcaNombre">Moda KREL´s</h4>
-            <p class="text-dim" id="marcaDescripcion">
-              Empresa dedicada a crear conjuntos de ropa modernos, cómodos y versátiles, combinando estilo, calidad y tendencias.
-            </p>
-          </div>
+                <!-- 1. LOGOTIPO -->
+                <div class="row g-4 mb-4">
+                    <div class="col-lg-4 col-xl-3" data-aos="fade-up" data-aos-delay="0">
+                        <div class="marca-card h-100">
+                            <div class="logo-container" id="marcaLogo">
+                                <img src="" alt="Logotipo" id="marcaLogoImg" class="marca-logo-img" />
+                                <div class="logo-fallback" id="marcaLogoFallback">
+                                    <i class="bi bi-hexagon-fill"></i>
+                                    <span>LOGO</span>
+                                </div>
+                            </div>
+                            <h4 class="mt-4" id="marcaNombre">Moda KREL´s</h4>
+                            <p class="text-dim" id="marcaDescripcion">
+                                Empresa dedicada a crear conjuntos de ropa modernos, cómodos y versátiles, combinando estilo, calidad y tendencias.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 2. PROPUESTA DE VALOR -->
+                    <div class="col-lg-8 col-xl-9" data-aos="fade-up" data-aos-delay="100">
+                        <div class="propuesta-card h-100 propuesta-grande">
+                            <div class="icon-box"><i class="bi bi-bullseye"></i></div>
+                            <h5>Propuesta de Valor</h5>
+                            <p id="marcaPropuesta">
+                                Impulsar el emprendimiento universitario con planes de negocio sólidos, creativos y ejecutables.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 y 4. VISIÓN + MISIÓN -->
+                <div class="row g-4">
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="propuesta-card h-100">
+                            <div class="icon-box"><i class="bi bi-eye"></i></div>
+                            <h5>Visión</h5>
+                            <p id="marcaVision">
+                                Ser referente nacional en innovación académica aplicada al mundo empresarial.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="propuesta-card h-100">
+                            <div class="icon-box"><i class="bi bi-flag"></i></div>
+                            <h5>Misión</h5>
+                            <p id="marcaMision">
+                                Formar profesionales capaces de transformar ideas en empresas sostenibles y competitivas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
+    </section>
 
-        <!-- 2. PROPUESTA DE VALOR -->
-        <div class="col-lg-8 col-xl-9" data-aos="fade-up" data-aos-delay="100">
-          <div class="propuesta-card h-100 propuesta-grande">
-            <div class="icon-box"><i class="bi bi-bullseye"></i></div>
-            <h5>Propuesta de Valor</h5>
-            <p id="marcaPropuesta">
-              Impulsar el emprendimiento universitario con planes de negocio sólidos, creativos y ejecutables.
-            </p>
-          </div>
-        </div>
-      </div>
+    <!-- ===== PLANES DE NEGOCIO ===== -->
+    <section id="planes" class="section-padding planes-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="section-tag">Nuestros Proyectos</span>
+                <h2 class="section-title">4 Planes de Negocio</h2>
+                <p class="section-subtitle">
+                    Cada plan incluye información detallada descargable en formato PDF interactivo.
+                </p>
+            </div>
 
-      <!-- 3 y 4. VISIÓN + MISIÓN -->
-      <div class="row g-4">
-        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="propuesta-card h-100">
-            <div class="icon-box"><i class="bi bi-eye"></i></div>
-            <h5>Visión</h5>
-            <p id="marcaVision">
-              Ser referente nacional en innovación académica aplicada al mundo empresarial.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="propuesta-card h-100">
-            <div class="icon-box"><i class="bi bi-flag"></i></div>
-            <h5>Misión</h5>
-            <p id="marcaMision">
-              Formar profesionales capaces de transformar ideas en empresas sostenibles y competitivas.
-            </p>
-          </div>
-        </div>
-      </div>
+            <div class="row g-4">
 
-    </div>
-  </div>
-</section>
-
- <!-- ===== PLANES DE NEGOCIO ===== -->
-<section id="planes" class="section-padding planes-section">
-  <div class="container">
-    <div class="text-center mb-5" data-aos="fade-up">
-      <span class="section-tag">Nuestros Proyectos</span>
-      <h2 class="section-title">4 Planes de Negocio</h2>
-      <p class="section-subtitle">
-        Cada plan incluye información detallada descargable en formato PDF interactivo.
-      </p>
-    </div>
-
-    <div class="row g-4">
-
-      <!-- PLAN 1 -->
-      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
-        <div class="plan-card">
-          <div class="plan-img">
-            <img src="assets/planes/plan1.png" alt="Café Aurora" />
-          </div>
-          <h5>Plan 1</h5>
-          <h4>MODA KREL´S</h4>
-          <p>Empresa dedicada a crear conjuntos de ropa modernos, cómodos y versátiles, combinando estilo, calidad y tendencias.</p>
-          <div class="plan-tags">
-            <span>Moda</span><span>Estilo</span>
-          </div>
-          <button class="btn btn-plan" data-pdf="plan1" data-plan="Café Aurora">
+                <!-- PLAN 1 -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+                    <div class="plan-card">
+                        <div class="plan-img">
+                            <img src="assets/planes/plan1.png" alt="Café Aurora" />
+                        </div>
+                        <h5>Plan 1</h5>
+                        <h4>MODA KREL´S</h4>
+                        <p>Empresa dedicada a crear conjuntos de ropa modernos, cómodos y versátiles, combinando estilo, calidad y tendencias.</p>
+                        <div class="plan-tags">
+                            <span>Moda</span><span>Estilo</span>
+                        </div>
+                        <button class="btn btn-plan" data-pdf="plan1" data-plan="Café Aurora">
             <i class="bi bi-file-earmark-pdf me-2"></i>Ver Plan PDF
           </button>
-        </div>
-      </div>
+                    </div>
+                </div>
 
-      <!-- PLAN 2 -->
-      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
-        <div class="plan-card">
-          <div class="plan-img">
-            <img src="assets/planes/plan2.png" alt="TechNova" />
-          </div>
-          <h5>Plan 2</h5>
-          <h4>D´Lirios</h4>
-          <p>Empresa dedicada a ofrecer comida saludable, fresca y nutritiva, combinando sabor y bienestar en cada platillo.</p>
-          <div class="plan-tags">
-            <span>Fit</span><span>Comida</span>
-          </div>
-          <button class="btn btn-plan" data-pdf="plan2" data-plan="TechNova">
+                <!-- PLAN 2 -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="plan-card">
+                        <div class="plan-img">
+                            <img src="assets/planes/plan2.png" alt="TechNova" />
+                        </div>
+                        <h5>Plan 2</h5>
+                        <h4>D´Lirios</h4>
+                        <p>Empresa dedicada a ofrecer comida saludable, fresca y nutritiva, combinando sabor y bienestar en cada platillo.</p>
+                        <div class="plan-tags">
+                            <span>Fit</span><span>Comida</span>
+                        </div>
+                        <button class="btn btn-plan" data-pdf="plan2" data-plan="TechNova">
             <i class="bi bi-file-earmark-pdf me-2"></i>Ver Plan PDF
           </button>
-        </div>
-      </div>
+                    </div>
+                </div>
 
-      <!-- PLAN 3 -->
-      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-        <div class="plan-card">
-          <div class="plan-img">
-            <img src="assets/planes/plan3.png" alt="EcoVerde" />
-          </div>
-          <h5>Plan 3</h5>
-          <h4>GRAFILAB</h4>
-          <p>Marca de ropa que combina moda, estilo y tendencias, ofreciendo prendas modernas para destacar con personalidad.</p>
-          <div class="plan-tags">
-            <span>Moda</span><span>Estilo</span>
-          </div>
-          <button class="btn btn-plan" data-pdf="plan3" data-plan="EcoVerde">
+                <!-- PLAN 3 -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="plan-card">
+                        <div class="plan-img">
+                            <img src="assets/planes/plan3.png" alt="EcoVerde" />
+                        </div>
+                        <h5>Plan 3</h5>
+                        <h4>GRAFILAB</h4>
+                        <p>Marca de ropa que combina moda, estilo y tendencias, ofreciendo prendas modernas para destacar con personalidad.</p>
+                        <div class="plan-tags">
+                            <span>Moda</span><span>Estilo</span>
+                        </div>
+                        <button class="btn btn-plan" data-pdf="plan3" data-plan="EcoVerde">
             <i class="bi bi-file-earmark-pdf me-2"></i>Ver Plan PDF
           </button>
-        </div>
-      </div>
+                    </div>
+                </div>
 
-      <!-- PLAN 4 -->
-      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-        <div class="plan-card">
-          <div class="plan-img">
-            <img src="assets/planes/plan4.png" alt="SaludPlus" />
-          </div>
-          <h5>Plan 4</h5>
-          <h4>Guate Recicla</h4>
-          <p>Sistema comunitario de economía circular y puntos limpios</p>
-          <div class="plan-tags">
-            <span>Reciclaje</span><span>Bienestar</span>
-          </div>
-          <button class="btn btn-plan" data-pdf="plan4" data-plan="SaludPlus">
+                <!-- PLAN 4 -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="plan-card">
+                        <div class="plan-img">
+                            <img src="assets/planes/plan4.png" alt="SaludPlus" />
+                        </div>
+                        <h5>Plan 4</h5>
+                        <h4>Guate Recicla</h4>
+                        <p>Sistema comunitario de economía circular y puntos limpios</p>
+                        <div class="plan-tags">
+                            <span>Reciclaje</span><span>Bienestar</span>
+                        </div>
+                        <button class="btn btn-plan" data-pdf="plan4" data-plan="SaludPlus">
             <i class="bi bi-file-earmark-pdf me-2"></i>Ver Plan PDF
           </button>
+                    </div>
+                </div>
+
+            </div>
         </div>
-      </div>
+    </section>
 
-    </div>
-  </div>
-</section>
-
-<!-- ===== MARQUEE / TEXTO EN BUCLE ===== -->
-<section class="marquee-section" aria-hidden="true">
-  <div class="marquee-track">
-    <div class="marquee-content">
-      <span>Innovación guatemalteca</span>
-      <i class="bi bi-star-fill"></i>
-      <span>4 planes de negocio</span>
-      <i class="bi bi-star-fill"></i>
-      <span>Talento UMG</span>
-      <i class="bi bi-star-fill"></i>
-      <span>Visión empresarial</span>
-      <i class="bi bi-star-fill"></i>
-      <span>Ideas que transforman</span>
-      <i class="bi bi-star-fill"></i>
-      <span>Futuro sostenible</span>
-      <i class="bi bi-star-fill"></i>
-      <span>Emprendimiento joven</span>
-      <i class="bi bi-star-fill"></i>
-    </div>
-    <!-- Duplicado para loop continuo sin cortes -->
-    <div class="marquee-content" aria-hidden="true">
-      <span>Innovación guatemalteca</span>
-      <i class="bi bi-star-fill"></i>
-      <span>4 planes de negocio</span>
-      <i class="bi bi-star-fill"></i>
-      <span>Talento UMG</span>
-      <i class="bi bi-star-fill"></i>
-      <span>Visión empresarial</span>
-      <i class="bi bi-star-fill"></i>
-      <span>Ideas que transforman</span>
-      <i class="bi bi-star-fill"></i>
-      <span>Futuro sostenible</span>
-      <i class="bi bi-star-fill"></i>
-      <span>Emprendimiento joven</span>
-      <i class="bi bi-star-fill"></i>
-    </div>
-  </div>
-</section>
-
-  <!-- ===== VIDEO EXPLICATIVO ===== -->
-<section id="video" class="section-padding video-section">
-  <div class="container">
-    <div class="text-center mb-5" data-aos="fade-up">
-      <span class="section-tag">Conoce más</span>
-      <h2 class="section-title">Videos Explicativos</h2>
-      <p class="section-subtitle">
-        Un video por cada plan de negocio para conocerlos a fondo.
-      </p>
-    </div>
-
-    <div class="row g-4">
-      <!-- Video Plan 1 -->
-      <div class="col-md-6" data-aos="zoom-in" data-aos-delay="0">
-        <div class="video-block">
-          <h5 class="video-title"><i class="bi bi-cup-hot-fill me-2"></i>Restaurante D´Lirios</h5>
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/4pc23fSMTE0?si=yG3CErUHWzDVeBZs"
-                    title="Restaurante D´Lirios" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-          </div>
+    <!-- ===== MARQUEE / TEXTO EN BUCLE ===== -->
+    <section class="marquee-section" aria-hidden="true">
+        <div class="marquee-track">
+            <div class="marquee-content">
+                <span>Innovación guatemalteca</span>
+                <i class="bi bi-star-fill"></i>
+                <span>4 planes de negocio</span>
+                <i class="bi bi-star-fill"></i>
+                <span>Talento UMG</span>
+                <i class="bi bi-star-fill"></i>
+                <span>Visión empresarial</span>
+                <i class="bi bi-star-fill"></i>
+                <span>Ideas que transforman</span>
+                <i class="bi bi-star-fill"></i>
+                <span>Futuro sostenible</span>
+                <i class="bi bi-star-fill"></i>
+                <span>Emprendimiento joven</span>
+                <i class="bi bi-star-fill"></i>
+            </div>
+            <!-- Duplicado para loop continuo sin cortes -->
+            <div class="marquee-content" aria-hidden="true">
+                <span>Innovación guatemalteca</span>
+                <i class="bi bi-star-fill"></i>
+                <span>4 planes de negocio</span>
+                <i class="bi bi-star-fill"></i>
+                <span>Talento UMG</span>
+                <i class="bi bi-star-fill"></i>
+                <span>Visión empresarial</span>
+                <i class="bi bi-star-fill"></i>
+                <span>Ideas que transforman</span>
+                <i class="bi bi-star-fill"></i>
+                <span>Futuro sostenible</span>
+                <i class="bi bi-star-fill"></i>
+                <span>Emprendimiento joven</span>
+                <i class="bi bi-star-fill"></i>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <!-- Video Plan 2 -->
-      <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
-        <div class="video-block">
-          <h5 class="video-title"><i class="bi bi-laptop-fill me-2"></i>Moda Kerl´s</h5>
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/eQeMJLvglDk?si=4OpOemQ4iGyCwI5J"
-                    title="Moda Kerl´s" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-          </div>
+    <!-- ===== VIDEO EXPLICATIVO ===== -->
+    <section id="video" class="section-padding video-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="section-tag">Conoce más</span>
+                <h2 class="section-title">Videos Explicativos</h2>
+                <p class="section-subtitle">
+                    Un video por cada plan de negocio para conocerlos a fondo.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Video Plan 1 -->
+                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="video-block">
+                        <h5 class="video-title"><i class="bi bi-cup-hot-fill me-2"></i>Restaurante D´Lirios</h5>
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/4pc23fSMTE0?si=yG3CErUHWzDVeBZs" title="Restaurante D´Lirios" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Plan 2 -->
+                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="video-block">
+                        <h5 class="video-title"><i class="bi bi-laptop-fill me-2"></i>Moda Kerl´s</h5>
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/eQeMJLvglDk?si=4OpOemQ4iGyCwI5J" title="Moda Kerl´s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Plan 3 -->
+                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="video-block">
+                        <h5 class="video-title"><i class="bi bi-flower1 me-2"></i>Guate Recicla</h5>
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/LUuCK-2qhMQ?si=iSSRc1lq5VVPqfYy" title="GUATE RECICLA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Plan 4 -->
+                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="video-block">
+                        <h5 class="video-title"><i class="bi bi-heart-pulse-fill me-2"></i>GRAFILAB</h5>
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/KQkZVAaVJ6I?si=6wvi7WPfjJKFzC9h" title="GRAFILAB" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <!-- Video Plan 3 -->
-      <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200">
-        <div class="video-block">
-          <h5 class="video-title"><i class="bi bi-flower1 me-2"></i>Guate Recicla</h5>
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/LUuCK-2qhMQ?si=iSSRc1lq5VVPqfYy"
-                    title="GUATE RECICLA" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-          </div>
+    <!-- ===== GALERÍA DE PUBLICIDAD ===== -->
+    <section id="galeria" class="section-padding galeria-section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="section-tag">Galería Publicitaria</span>
+                <h2 class="section-title">Publicidad por marca</h2>
+                <p class="section-subtitle">
+                    Selecciona una marca para ver todas sus piezas publicitarias.
+                </p>
+            </div>
+
+            <!-- ============ TARJETAS DE MARCA ============ -->
+            <div class="marca-cards-grid mb-5" data-aos="fade-up">
+
+                <button class="marca-card-btn" data-marca="cafe">
+        <div class="marca-card-img">
+          <img src="assets/planes/plan1.png" alt="Moda Kerl´s" />
         </div>
-      </div>
-
-      <!-- Video Plan 4 -->
-      <div class="col-md-6" data-aos="zoom-in" data-aos-delay="300">
-        <div class="video-block">
-          <h5 class="video-title"><i class="bi bi-heart-pulse-fill me-2"></i>GRAFILAB</h5>
-          <div class="video-wrapper">
-            <iframe src="https://www.youtube.com/embed/KQkZVAaVJ6I?si=6wvi7WPfjJKFzC9h"
-                    title="GRAFILAB" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-          </div>
+        <div class="marca-card-info">
+          <h5>Moda Kerl´s</h5>
+          <small>Piezas publicitarias</small>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+        <span class="marca-card-arrow"><i class="bi bi-arrow-right"></i></span>
+      </button>
 
-<!-- ===== GALERÍA DE PUBLICIDAD ===== -->
-<section id="galeria" class="section-padding galeria-section">
-  <div class="container">
-    <div class="text-center mb-5" data-aos="fade-up">
-      <span class="section-tag">Galería Publicitaria</span>
-      <h2 class="section-title">Así se ve nuestra publicidad</h2>
-      <p class="section-subtitle">
-        Selecciona una marca para ver cómo luce su publicidad en cada canal.
-      </p>
-    </div>
-
-    <!-- Selector de marcas -->
-   
-
-  <!-- ===== CONTACTO ===== -->
-  <section id="contacto" class="section-padding contacto-section">
-    <div class="container">
-      <div class="row g-5 align-items-center">
-        <div class="col-lg-5" data-aos="fade-right">
-          <span class="section-tag">Hablemos</span>
-          <h2 class="section-title">Contáctanos</h2>
-          <p class="section-subtitle mb-4">
-            ¿Tienes preguntas sobre alguno de los planes? Escríbenos y te responderemos pronto.
-          </p>
-          <div class="contact-info">
-            <div class="info-item"><i class="bi bi-geo-alt-fill"></i><div><strong>Dirección</strong><p>Guatemala City, Guatemala</p></div></div>
-            <div class="info-item"><i class="bi bi-envelope-fill"></i><div><strong>Email</strong><p>businesslab@umg.edu.gt</p></div></div>
-            <div class="info-item"><i class="bi bi-telephone-fill"></i><div><strong>Teléfono</strong><p>+502 0000-0000</p></div></div>
-          </div>
-          <div class="social-links mt-4">
-            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" aria-label="Twitter / X"><i class="bi bi-twitter-x"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-            <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
-          </div>
+                <button class="marca-card-btn" data-marca="tech">
+        <div class="marca-card-img">
+          <img src="assets/planes/plan2.png" alt="Restaurante D´Lirios" />
         </div>
+        <div class="marca-card-info">
+          <h5>Restaurante D´Lirios</h5>
+          <small>Piezas publicitarias</small>
+        </div>
+        <span class="marca-card-arrow"><i class="bi bi-arrow-right"></i></span>
+      </button>
 
-        <div class="col-lg-7" data-aos="fade-left">
-          <form class="contact-form" id="contactForm" novalidate>
-  <div class="row g-3">
-    <div class="col-md-6">
-      <label class="form-label">Nombre completo</label>
-      <input type="text" class="form-control" required placeholder="Tu nombre" />
-    </div>
-    <div class="col-md-6">
-      <label class="form-label">Correo electrónico</label>
-      <input type="email" class="form-control" required placeholder="tucorreo@ejemplo.com" />
-    </div>
+                <button class="marca-card-btn" data-marca="eco">
+        <div class="marca-card-img">
+          <img src="assets/planes/plan3.png" alt="GRAFILAB" />
+        </div>
+        <div class="marca-card-info">
+          <h5>GRAFILAB</h5>
+          <small>Piezas publicitarias</small>
+        </div>
+        <span class="marca-card-arrow"><i class="bi bi-arrow-right"></i></span>
+      </button>
 
-    <!-- SELECTOR DE NEGOCIO -->
-    <div class="col-12">
-      <label class="form-label">¿Sobre qué plan deseas información?</label>
-      <select class="form-select custom-select" required>
+                <button class="marca-card-btn" data-marca="salud">
+        <div class="marca-card-img">
+          <img src="assets/planes/plan4.png" alt="Guate Recicla" />
+        </div>
+        <div class="marca-card-info">
+          <h5>Guate Recicla</h5>
+          <small>Piezas publicitarias</small>
+        </div>
+        <span class="marca-card-arrow"><i class="bi bi-arrow-right"></i></span>
+      </button>
+
+            </div>
+
+            <!-- ============ PANEL DE GALERÍA EXPANDIBLE ============ -->
+            <div class="galeria-expandida" id="galeriaExpandida">
+
+                <div class="galeria-expandida-header">
+                    <div>
+                        <h4 id="galeriaMarcaNombre">Café Aurora</h4>
+                        <p id="galeriaMarcaDesc">Piezas publicitarias oficiales</p>
+                    </div>
+                    <button class="galeria-close" id="galeriaClose" aria-label="Cerrar galería">
+          <i class="bi bi-x-lg"></i>
+        </button>
+                </div>
+
+                <div class="galeria-fotos-grid" id="galeriaFotosGrid">
+                    <!-- Las fotos se inyectan desde JS -->
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section id="contacto" class="section-padding contacto-section">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <span class="section-tag">Hablemos</span>
+                    <h2 class="section-title">Contáctanos</h2>
+                    <p class="section-subtitle mb-4">
+                        ¿Tienes preguntas sobre alguno de los planes? Escríbenos y te responderemos pronto.
+                    </p>
+                    <div class="contact-info">
+                        <div class="info-item"><i class="bi bi-geo-alt-fill"></i>
+                            <div><strong>Dirección</strong>
+                                <p>Guatemala City, Guatemala</p>
+                            </div>
+                        </div>
+                        <div class="info-item"><i class="bi bi-envelope-fill"></i>
+                            <div><strong>Email</strong>
+                                <p>businesslab@umg.edu.gt</p>
+                            </div>
+                        </div>
+                        <div class="info-item"><i class="bi bi-telephone-fill"></i>
+                            <div><strong>Teléfono</strong>
+                                <p>+502 0000-0000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links mt-4">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="Twitter / X"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-7" data-aos="fade-left">
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control" required placeholder="Tu nombre" />
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" required placeholder="tucorreo@ejemplo.com" />
+                            </div>
+
+                            <!-- SELECTOR DE NEGOCIO -->
+                            <div class="col-12">
+                                <label class="form-label">¿Sobre qué plan deseas información?</label>
+                                <select class="form-select custom-select" required>
         <option value="" disabled selected>— Selecciona un plan de negocio —</option>
         <option value="cafe">Moda Kerl´s</option>
         <option value="tech">Restaurante D´Lirios</option>
@@ -470,93 +548,93 @@
         <option value="salud">Guate Recicla</option>
         <option value="general">Información general</option>
       </select>
-    </div>
+                            </div>
 
-    <div class="col-12">
-      <label class="form-label">Asunto</label>
-      <input type="text" class="form-control" required placeholder="Motivo de tu mensaje" />
-    </div>
-    <div class="col-12">
-      <label class="form-label">Mensaje</label>
-      <textarea class="form-control" rows="5" required placeholder="Escribe tu mensaje..."></textarea>
-    </div>
-    <div class="col-12">
-      <button type="submit" class="btn btn-primary-umg w-100">
+                            <div class="col-12">
+                                <label class="form-label">Asunto</label>
+                                <input type="text" class="form-control" required placeholder="Motivo de tu mensaje" />
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Mensaje</label>
+                                <textarea class="form-control" rows="5" required placeholder="Escribe tu mensaje..."></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary-umg w-100">
         <i class="bi bi-send-fill me-2"></i>Enviar Mensaje
       </button>
-    </div>
-  </div>
-</form>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="custom-footer">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-lg-4">
-          <div class="d-flex align-items-center gap-2 mb-3">
-            <span class="logo-mark">UMG</span>
-            <span class="brand-text">Business Lab</span>
-          </div>
-          <p class="text-dim">Proyecto académico de la Universidad Mariano Gálvez de Guatemala. Cuatro planes de negocio, una visión de futuro.</p>
+    <!-- ===== FOOTER ===== -->
+    <footer class="custom-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="logo-mark">UMG</span>
+                        <span class="brand-text">Business Lab</span>
+                    </div>
+                    <p class="text-dim">Proyecto académico de la Universidad Mariano Gálvez de Guatemala. Cuatro planes de negocio, una visión de futuro.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h6>Enlaces rápidos</h6>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#marca">Marca</a></li>
+                        <li><a href="#planes">Planes</a></li>
+                        <li><a href="#video">Video</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6>Síguenos</h6>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <p class="text-center text-dim mb-0">© 2025 UMG Business Lab — Proyecto académico. Todos los derechos reservados.</p>
         </div>
-        <div class="col-lg-4">
-          <h6>Enlaces rápidos</h6>
-          <ul class="footer-links">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#marca">Marca</a></li>
-            <li><a href="#planes">Planes</a></li>
-            <li><a href="#video">Video</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-4">
-          <h6>Síguenos</h6>
-          <div class="social-links">
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-twitter-x"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <p class="text-center text-dim mb-0">© 2026 UMG Business Lab — Proyecto académico. Todos los derechos reservados.</p>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- ===== MODAL PDF MULTI-PLAN ===== -->
-<div class="modal fade" id="pdfModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-fullscreen modal-dialog-centered pdf-modal-dialog">
-    <div class="modal-content custom-modal pdf-modal-content">
+    <!-- ===== MODAL PDF MULTI-PLAN ===== -->
+    <div class="modal fade" id="pdfModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen modal-dialog-centered pdf-modal-dialog">
+            <div class="modal-content custom-modal pdf-modal-content">
 
-      <!-- HEADER -->
-      <div class="modal-header pdf-modal-header">
-        <div class="pdf-modal-title-group">
-          <span class="pdf-modal-tag"><i class="bi bi-file-earmark-pdf-fill me-2"></i>Plan de Negocio</span>
-          <h5 class="modal-title" id="pdfTitle">Café Aurora</h5>
-        </div>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-      </div>
+                <!-- HEADER -->
+                <div class="modal-header pdf-modal-header">
+                    <div class="pdf-modal-title-group">
+                        <span class="pdf-modal-tag"><i class="bi bi-file-earmark-pdf-fill me-2"></i>Plan de Negocio</span>
+                        <h5 class="modal-title" id="pdfTitle">Café Aurora</h5>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
 
-      <!-- BODY: sidebar + visor -->
-      <div class="modal-body pdf-modal-body p-0">
-        <div class="pdf-layout">
+                <!-- BODY: sidebar + visor -->
+                <div class="modal-body pdf-modal-body p-0">
+                    <div class="pdf-layout">
 
-  <!-- ============ SIDEBAR: PLANES + DOCUMENTOS ============ -->
-  <aside class="pdf-sidebar" id="pdfSidebar">
+                        <!-- ============ SIDEBAR: PLANES + DOCUMENTOS ============ -->
+                        <aside class="pdf-sidebar" id="pdfSidebar">
 
-    <div class="pdf-sidebar-header">
-      <i class="bi bi-collection"></i>
-      <span>Planes disponibles</span>
-    </div>
+                            <div class="pdf-sidebar-header">
+                                <i class="bi bi-collection"></i>
+                                <span>Planes disponibles</span>
+                            </div>
 
-    <!-- Cada .pdf-plan es un bloque que puede contener N documentos -->
-    <div class="pdf-plan active" data-plan-key="plan1">
-      <button class="pdf-tab active" data-plan-key="plan1" data-plan="Café Aurora">
+                            <!-- Cada .pdf-plan es un bloque que puede contener N documentos -->
+                            <div class="pdf-plan active" data-plan-key="plan1">
+                                <button class="pdf-tab active" data-plan-key="plan1" data-plan="Café Aurora">
         <span class="pdf-tab-num">01</span>
         <div class="pdf-tab-info">
           <strong>MODA KREL´S</strong>
@@ -565,14 +643,14 @@
         <i class="bi bi-chevron-right"></i>
       </button>
 
-      <!-- Lista de documentos (se llena por JS) -->
-      <div class="pdf-docs-list">
-        <!-- Los <button class="pdf-doc"> los inyecta el JS -->
-      </div>
-    </div>
+                                <!-- Lista de documentos (se llena por JS) -->
+                                <div class="pdf-docs-list">
+                                    <!-- Los <button class="pdf-doc"> los inyecta el JS -->
+                                </div>
+                            </div>
 
-    <div class="pdf-plan" data-plan-key="plan2">
-      <button class="pdf-tab" data-plan-key="plan2" data-plan="TechNova">
+                            <div class="pdf-plan" data-plan-key="plan2">
+                                <button class="pdf-tab" data-plan-key="plan2" data-plan="TechNova">
         <span class="pdf-tab-num">02</span>
         <div class="pdf-tab-info">
           <strong>D´Lirios</strong>
@@ -580,11 +658,11 @@
         </div>
         <i class="bi bi-chevron-right"></i>
       </button>
-      <div class="pdf-docs-list"></div>
-    </div>
+                                <div class="pdf-docs-list"></div>
+                            </div>
 
-    <div class="pdf-plan" data-plan-key="plan3">
-      <button class="pdf-tab" data-plan-key="plan3" data-plan="EcoVerde">
+                            <div class="pdf-plan" data-plan-key="plan3">
+                                <button class="pdf-tab" data-plan-key="plan3" data-plan="EcoVerde">
         <span class="pdf-tab-num">03</span>
         <div class="pdf-tab-info">
           <strong>GRAFILAB</strong>
@@ -592,11 +670,11 @@
         </div>
         <i class="bi bi-chevron-right"></i>
       </button>
-      <div class="pdf-docs-list"></div>
-    </div>
+                                <div class="pdf-docs-list"></div>
+                            </div>
 
-    <div class="pdf-plan" data-plan-key="plan4">
-      <button class="pdf-tab" data-plan-key="plan4" data-plan="SaludPlus">
+                            <div class="pdf-plan" data-plan-key="plan4">
+                                <button class="pdf-tab" data-plan-key="plan4" data-plan="SaludPlus">
         <span class="pdf-tab-num">04</span>
         <div class="pdf-tab-info">
           <strong>Guate Recicla</strong>
@@ -604,73 +682,75 @@
         </div>
         <i class="bi bi-chevron-right"></i>
       </button>
-      <div class="pdf-docs-list"></div>
-    </div>
+                                <div class="pdf-docs-list"></div>
+                            </div>
 
-    <div class="pdf-sidebar-footer">
-      <a id="pdfDownload" href="#" download class="btn-pdf-download">
-        <i class="bi bi-download me-2"></i>Descargar PDF
-      </a>
-    </div>
+                            <div class="pdf-sidebar-footer">
+                                <a id="pdfDownload" href="#" download class="btn-pdf-download">
+                                    <i class="bi bi-download me-2"></i>Descargar PDF
+                                </a>
+                            </div>
 
-  </aside>
+                        </aside>
 
-  <!-- ============ VISOR ============ -->
-  <div class="pdf-viewer-area">
-    <div class="pdf-viewer-toolbar">
-      <section><div class="pdf-viewer-toolbar">
-  <div class="pdf-current-info">
-    <i class="bi bi-file-earmark-text"></i>
-    <span id="pdfCurrentLabel">Café Aurora</span>
-    <span class="pdf-current-sep">·</span>
-    <span id="pdfCurrentDoc" class="pdf-current-doc">Cargando…</span>
-  </div>
+                        <!-- ============ VISOR ============ -->
+                        <div class="pdf-viewer-area">
+                            <div class="pdf-viewer-toolbar">
+                                <section>
+                                    <div class="pdf-viewer-toolbar">
+                                        <div class="pdf-current-info">
+                                            <i class="bi bi-file-earmark-text"></i>
+                                            <span id="pdfCurrentLabel">Café Aurora</span>
+                                            <span class="pdf-current-sep">·</span>
+                                            <span id="pdfCurrentDoc" class="pdf-current-doc">Cargando…</span>
+                                        </div>
 
-  <!-- Selector móvil de documentos -->
-  <select id="pdfDocSelect" class="pdf-doc-select" aria-label="Seleccionar documento">
+                                        <!-- Selector móvil de documentos -->
+                                        <select id="pdfDocSelect" class="pdf-doc-select" aria-label="Seleccionar documento">
     <!-- Se llena por JS -->
   </select>
 
-  <div class="pdf-toolbar-actions">
-    <button class="pdf-tool-btn" id="pdfOpenNew" title="Abrir en nueva pestaña">
+                                        <div class="pdf-toolbar-actions">
+                                            <button class="pdf-tool-btn" id="pdfOpenNew" title="Abrir en nueva pestaña">
       <i class="bi bi-box-arrow-up-right"></i>
     </button>
-  </div>
-</div>
-</section>
-      <div class="pdf-current-info">
-        <i class="bi bi-file-earmark-text"></i>
+                                        </div>
+                                    </div>
+                                </section>
+                                <div class="pdf-current-info">
+                                    <i class="bi bi-file-earmark-text"></i>
 
-        <span class="pdf-current-sep">·</span>
-        <span id="pdfCurrentDoc" class="pdf-current-doc">Cargando…</span>
-      </div>
-      <div class="pdf-toolbar-actions">
-        <button class="pdf-tool-btn" id="pdfOpenNew" title="Abrir en nueva pestaña">
+                                    <span class="pdf-current-sep">·</span>
+                                    <span id="pdfCurrentDoc" class="pdf-current-doc">Cargando…</span>
+                                </div>
+                                <div class="pdf-toolbar-actions">
+                                    <button class="pdf-tool-btn" id="pdfOpenNew" title="Abrir en nueva pestaña">
           <i class="bi bi-box-arrow-up-right"></i>
         </button>
-      </div>
+                                </div>
+                            </div>
+
+                            <div class="pdf-viewer-wrap">
+                                <iframe id="pdfFrame" src="" title="Visor PDF"></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 
-    <div class="pdf-viewer-wrap">
-      <iframe id="pdfFrame" src="" title="Visor PDF"></iframe>
-    </div>
-  </div>
-
-</div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-  <!-- Botón back to top -->
-  <button id="backToTop" class="back-to-top" aria-label="Volver arriba">
+    <!-- Botón back to top -->
+    <button id="backToTop" class="back-to-top" aria-label="Volver arriba">
     <i class="bi bi-arrow-up"></i>
   </button>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/script.js"></script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
