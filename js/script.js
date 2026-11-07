@@ -468,7 +468,7 @@ const GALERIA_DATA = {
         nombre: 'Restaruante D´Lirios',
         descripcion: 'Piezas publicitarias',
         fotos: [
-            { src: 'assets/galeria/banner.jpeg', titulo: 'recurso' },
+            { src: 'assets/galeria/Banner.jpeg', titulo: 'recurso' },
             { src: 'assets/galeria/Post Facebook.jpeg', titulo: 'recurso' },
             { src: 'assets/galeria/Post Instagram.jpeg', titulo: 'recurso' },
             { src: 'assets/galeria/Story Instagram.jpeg', titulo: 'recurso' }
